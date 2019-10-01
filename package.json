@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Joel Baudin",
   "dependencies": {
+    "@mdx-deck/components": "^2.5.0",
     "@mdx-deck/themes": "^3.0.8",
     "gatsby": "^2.15.28",
     "gatsby-image": "^2.2.23",
