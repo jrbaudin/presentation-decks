@@ -1,5 +1,5 @@
 import { future, prism } from '@mdx-deck/themes'
-import { Image } from 'mdx-deck'
+import { Image, Appear } from 'mdx-deck'
 
 export const themes = [future, prism]
 
@@ -18,21 +18,84 @@ export const themes = [future, prism]
     backgroundColor: 'black',
   }}>
 
-# An example
+  # Combining static and dynamic content
+  ## with Gatsby and Apollo
+  ### by Joel Baudin
 
-```jsx
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-```
+  <div style={{ fontSize: '30px' }}>
+    <a style={{  textDecoration: 'none', color: "white", }} href="https://twitter.com/jrbaudin" target="_blank">@jrbaudin</a>
+    <span>{' '}·{' '}</span>
+    <a style={{  textDecoration: 'none', color: 'white', }} href="mailto:joel@karma.life" target="_blank">joel@karma.life</a>
+  </div>
 
 </Image>
+
+---
+
+<Image
+  src='../cabin.jpg'
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <img style={{ width: 250, height: 250, borderRadius: '50%' }} src="../joel2.jpg"/>
+  <div style={{ marginLeft: '2rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+      <p><strong>Role</strong>: Engineering Lead</p>
+      <p><strong>At</strong>: Karma</p>
+      <p><strong>Located</strong>: Örnsköldsvik, SE</p>
+  </div>
+
+</Image>
+
+---
+
+# What is the problem we're solving?
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+  <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+    <h3><strong>Server Side Rendering</strong></h3>
+    <p><span>➕</span> Performance</p>
+    <p><span>➕</span> Control</p>
+    <p><span>➖</span> Complex deploys</p>
+    <p><span>➖</span> You need to run a server</p>
+  </div>
+  <p><h1>VS.</h1></p>
+  <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+    <h3><strong>Static Assets</strong></h3>
+    <p><span>➕</span> Hosted on CDN</p>
+    <p><span>➕</span> Simpler deploys</p>
+    <p><span>➕</span> You don't need run a server</p>
+    <p><span>➖</span> Performance is hard</p>
+  </div>
+</div>
+
+---
+
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', }}>
+  <h1>What is Gatsby?</h1>
+  <img style={{}} src="../gatsby-description.png"/>
+  <Appear>
+    <h1>No but <u>really</u>, what is it?</h1>
+    <h2>A <strong>static site generator</strong> that loads data from anywhere using APIs</h2>
+    <h2>Oh..and yeah it's built on <strong>GraphQL</strong></h2>
+    <h1>🍻</h1>
+  </Appear>
+</div>
+
+---
+
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"80vw" }}>
+  <h1>What is Apollo?</h1>
+  <img style={{}} src="../apollo-description.png"/>
+  <Appear>
+    <h2>A <strong>toolkit</strong> for working with <strong>GraphQL</strong> on both the client and server side</h2>
+  </Appear>
+</div>
+
+---
+
+# DEMO
