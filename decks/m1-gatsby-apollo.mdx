@@ -53,48 +53,108 @@ export const themes = [future, prism]
 
 ---
 
-# What is the problem we're solving?
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
 
-<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-  <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
-    <h3><strong>Server Side Rendering</strong></h3>
-    <p><span>➕</span> Performance</p>
-    <p><span>➕</span> Control</p>
-    <p><span>➖</span> Complex deploys</p>
-    <p><span>➖</span> You need to run a server</p>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', }}>
+    <h1>What is Gatsby?</h1>
+    <img style={{}} src="../gatsby-description.png"/>
+    <Appear>
+      <h1>No but <u>really</u>, what is it?</h1>
+      <h2>A <strong>static site generator</strong> that loads data from anywhere using APIs</h2>
+      <h2>Oh..and yeah it's built on <strong>GraphQL</strong></h2>
+      <h1>🍻</h1>
+    </Appear>
   </div>
-  <p><h1>VS.</h1></p>
-  <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
-    <h3><strong>Static Assets</strong></h3>
-    <p><span>➕</span> Hosted on CDN</p>
-    <p><span>➕</span> Simpler deploys</p>
-    <p><span>➕</span> You don't need run a server</p>
-    <p><span>➖</span> Performance is hard</p>
-  </div>
-</div>
+
+</Image>
 
 ---
 
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', }}>
-  <h1>What is Gatsby?</h1>
-  <img style={{}} src="../gatsby-description.png"/>
-  <Appear>
-    <h1>No but <u>really</u>, what is it?</h1>
-    <h2>A <strong>static site generator</strong> that loads data from anywhere using APIs</h2>
-    <h2>Oh..and yeah it's built on <strong>GraphQL</strong></h2>
-    <h1>🍻</h1>
-  </Appear>
-</div>
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"80vw" }}>
+    <h1>What is Apollo?</h1>
+    <img style={{}} src="../apollo-description.png"/>
+    <Appear>
+      <h2>A <strong>toolkit</strong> for working with <strong>GraphQL</strong> on both the client and server side</h2>
+    </Appear>
+  </div>
+
+</Image>
+
+---
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <h1 style={{ fontSize: '70px' }}><strong>Build</strong> what you can in advance</h1>
+    <Appear>
+      <h1>Load the rest dynamically</h1>
+    </Appear>
+  </div>
+
+</Image>
 
 ---
 
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"80vw" }}>
-  <h1>What is Apollo?</h1>
-  <img style={{}} src="../apollo-description.png"/>
-  <Appear>
-    <h2>A <strong>toolkit</strong> for working with <strong>GraphQL</strong> on both the client and server side</h2>
-  </Appear>
-</div>
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+      <h3><strong>Server Side Rendering</strong> (ex. Next.js)</h3>
+      <p><span>➕</span> Performance is easier</p>
+      <p><span>➕</span> More control</p>
+      <p><span>➕</span> Less client side business logic</p>
+      <p><span>➖</span> Complex deploys</p>
+      <p><span>➖</span> You need to run a server</p>
+    </div>
+    <p><h1>VS.</h1></p>
+    <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+      <h3><strong>Static Assets (eg. JAMstack)</strong></h3>
+      <p><span>➕</span> Hosted on CDN = <strong>fast</strong></p>
+      <p><span>➕</span> Simpler deploys</p>
+      <p><span>➕</span> You <strong>don't need run a web server</strong></p>
+      <p><span>➖</span> Performance is hard</p>
+      <p><span>➖</span> More client side business logic</p>
+    </div>
+  </div>
+
+</Image>
 
 ---
 
