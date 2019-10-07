@@ -1,5 +1,5 @@
 import { future, prism } from '@mdx-deck/themes'
-import { Image, Appear } from 'mdx-deck'
+import { Image, Appear, Notes } from 'mdx-deck'
 
 export const themes = [future, prism]
 
@@ -18,14 +18,15 @@ export const themes = [future, prism]
     backgroundColor: 'black',
   }}>
 
-  # Combining static and dynamic content
-  ## with Gatsby and Apollo
-  ### by Joel Baudin
-
-  <div style={{ fontSize: '30px' }}>
-    <a style={{  textDecoration: 'none', color: "white", }} href="https://twitter.com/jrbaudin" target="_blank">@jrbaudin</a>
-    <span>{' '}·{' '}</span>
-    <a style={{  textDecoration: 'none', color: 'white', }} href="mailto:joel@karma.life" target="_blank">joel@karma.life</a>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"100vw" }}>
+    <h1 style={{ fontSize: '50px', textAlign: 'center'}}>Combining static and dynamic content</h1>
+    <h2 style={{ fontSize: '40px'}}>with Gatsby and Apollo</h2>
+    <h3 style={{ fontSize: '30px'}}>by Joel Baudin</h3>
+    <div style={{ fontSize: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <a style={{ paddingRight: '10px', textDecoration: 'none', color: "white", }} href="https://twitter.com/jrbaudin" target="_blank">@jrbaudin</a>
+      <span>{' '}·{' '}</span>
+      <a style={{ paddingLeft: '10px', textDecoration: 'none', color: 'white', }} href="mailto:joel@karma.life" target="_blank">joel@karma.life</a>
+    </div>
   </div>
 
 </Image>
@@ -46,7 +47,32 @@ export const themes = [future, prism]
   <div style={{ marginLeft: '2rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
       <p><strong>Role</strong>: Engineering Lead</p>
       <p><strong>At</strong>: Karma</p>
-      <p><strong>Located</strong>: Örnsköldsvik, SE</p>
+      <p style={{ paddingTop: '10px' }}>⛷️ + 👶🏼🧒🏼</p>
+  </div>
+
+</Image>
+
+<Notes>
+  - Karma is a platform where Restaurants, Hotels, Cafes and Grocery Stores can sell their surplus foods to consumer for half the price.
+  - Leading Engineering work in the B2B side of the Karma marketplace.
+  - We're based on NodeJS and using GraphQL and React.
+</Notes>
+
+---
+
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <h1 style={{ fontSize: '180px' }}><strong>WHAT</strong></h1>
   </div>
 
 </Image>
@@ -64,18 +90,20 @@ export const themes = [future, prism]
     backgroundColor: 'black',
   }}>
 
-  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', }}>
-    <h1>What is Gatsby?</h1>
-    <img style={{}} src="../gatsby-description.png"/>
-    <Appear>
-      <h1>No but <u>really</u>, what is it?</h1>
-      <h2>A <strong>static site generator</strong> that loads data from anywhere using APIs</h2>
-      <h2>Oh..and yeah it's built on <strong>GraphQL</strong></h2>
-      <h1>🍻</h1>
-    </Appear>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"100vw" }}>
+    <h1 style={{ fontSize: '120px' }}>We'll use</h1>
+    <div style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
+      <h2 style={{ margin: '0 10px', fontSize: '70px'}}>+ Gatsby <a style={{ textDecoration: 'none', color: 'white', fontSize: '30px', marginLeft: '10px' }} href="https://www.gatsbyjs.org/" target="_blank">gatsbyjs.org</a></h2>
+      <h2 style={{ margin: '0 10px', fontSize: '70px'}}>+ Apollo <a style={{ textDecoration: 'none', color: 'white', fontSize: '30px', marginLeft: '10px' }} href="https://www.apollographql.com/" target="_blank">apollographql.com</a></h2>
+    </div>
   </div>
 
 </Image>
+
+<Notes>
+  * Gatsby - is a static site generator based on React that's very fast by default
+  * Apollo - a GraphQL framework for both client- and server side.
+</Notes>
 
 ---
 
@@ -90,17 +118,14 @@ export const themes = [future, prism]
     backgroundColor: 'black',
   }}>
 
-  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', width:"80vw" }}>
-    <h1>What is Apollo?</h1>
-    <img style={{}} src="../apollo-description.png"/>
-    <Appear>
-      <h2>A <strong>toolkit</strong> for working with <strong>GraphQL</strong> on both the client and server side</h2>
-    </Appear>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <h1 style={{ fontSize: '180px' }}><strong>WHY</strong></h1>
   </div>
 
 </Image>
 
 ---
+
 <Image
   src='../background.png'
   style={{
@@ -114,9 +139,7 @@ export const themes = [future, prism]
 
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
     <h1 style={{ fontSize: '70px' }}><strong>Build</strong> what you can in advance</h1>
-    <Appear>
-      <h1>Load the rest dynamically</h1>
-    </Appear>
+    <h1 style={{ fontSize: '80px' }}>Load the rest dynamically</h1>
   </div>
 
 </Image>
@@ -136,21 +159,12 @@ export const themes = [future, prism]
 
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
     <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
-      <h3><strong>Server Side Rendering</strong> (ex. Next.js)</h3>
-      <p><span>➕</span> Performance is easier</p>
-      <p><span>➕</span> More control</p>
-      <p><span>➕</span> Less client side business logic</p>
-      <p><span>➖</span> Complex deploys</p>
-      <p><span>➖</span> You need to run a server</p>
-    </div>
-    <p><h1>VS.</h1></p>
-    <div style={{ margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
-      <h3><strong>Static Assets (eg. JAMstack)</strong></h3>
-      <p><span>➕</span> Hosted on CDN = <strong>fast</strong></p>
-      <p><span>➕</span> Simpler deploys</p>
-      <p><span>➕</span> You <strong>don't need run a web server</strong></p>
-      <p><span>➖</span> Performance is hard</p>
-      <p><span>➖</span> More client side business logic</p>
+      <h3><strong>Build what you can (= static assets)</strong></h3>
+      <Appear>
+        <p>Hosted on CDN = <strong>fast</strong></p>
+        <p>Simpler deploys</p>
+        <p>You <strong>don't need run a web server</strong></p>
+      </Appear>
     </div>
   </div>
 
@@ -158,4 +172,41 @@ export const themes = [future, prism]
 
 ---
 
-# DEMO
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <h1 style={{ fontSize: '180px' }}><strong>HOW</strong></h1>
+  </div>
+
+</Image>
+
+---
+
+<Image
+  src='../background.png'
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', margin: '0 1rem', borderRadius: '5px', backgroundColor: 'white', color: 'black', padding: '2rem' }}>
+      <h3><strong>The Mission</strong></h3>
+      <img style={{ width: '500px' }} src="../system.jpg" />
+    </div>
+  </div>
+
+</Image>
